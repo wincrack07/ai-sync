@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "Bidirectional chat sync between Claude Code and Codex",
   "type": "module",
-  "bin": { "ai-sync": "dist/src/cli.js" },
-  "engines": { "node": ">=22.13" },
+  "bin": {
+    "ai-sync": "dist/src/cli.js"
+  },
+  "engines": {
+    "node": ">=22.23.4 <23 || >=24.22.1 <25 || >=26.12.1 <27"
+  },
   "scripts": {
     "build": "tsc -p .",
     "test": "tsc -p . && node --disable-warning=ExperimentalWarning --test dist/test/*.test.js",
